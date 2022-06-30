@@ -1,0 +1,11 @@
+services:
+  vue:
+    build:
+      context: .
+      dockerfile: "Dockerfile"
+    command: "npm run dev"
+    # tty: true
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app
